@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .add{
+            display: block;
+            margin: 0 auto;
+            min-width: 200px;
+        }
+
+        h5{
+            display: inline;
+        }
+
+        .item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:  20px 0;
+        }
+
+        #list{
+   
+            padding: 10px 20px;
+        }
+        .removeall{
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center primary mt-3"> TODO LIST</h2>
+        <!-- Thêm item-->
+        <form>
+            <div class="mb-3">
+                <input type="text" class="form-control d-block" id="addItem" />
+                <button class="btn btn-primary mt-4 add" type="submit" > 
+                    ADD ITEM
+                </button>
+            </div>
+        </form>
+        <!-- Search item-->
+        <!-- List item-->
+        <h3 class="text-center primary mt-3">LIST ITEM</h3>
+        <input type="text" id="search" class="form-control d-block" />
+        <button class="btn btn-danger removeall" id="removeAll" > REMOVE ALL </button>
+
+        <div id="list" class="">
+            
+
+        </div>
+    </div>
+    <script src="./toDoList.js" ></script>
+</body>
+</html>
